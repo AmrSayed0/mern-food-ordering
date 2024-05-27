@@ -1,9 +1,14 @@
 import express, { Request, Response } from "express";
 import "dotenv/config";
 import cors from "cors";
+import mongoose from "mongoose";
+
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string).then(() => {
+  console.log("Database connected successfully");
+});
 
 const app = express();
-app.use(express.json()); // to convert incoming request to json
+app.use(express.json());
 app.use(cors());
 
 app.get("/test", async (req: Request, res: Response) => {
