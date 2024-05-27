@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 const AppRoutes = () => {
   return (
     <Routes>
-      {/* Routes go here */}
       <Route
         path="/"
         element={
@@ -14,7 +13,10 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-      <Route path="/user-profile" element={<span>User Profile Page</span>} />
+      <Route
+        path="/user-profile"
+        element={<span>User Profile Page</span>}
+      />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
