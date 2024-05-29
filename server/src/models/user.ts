@@ -19,6 +19,9 @@ const userSchema = new mongoose.Schema({
   country: {
     type: String,
   },
+  city: {
+    type: String,
+  },
 });
 
 const User = mongoose.model("User", userSchema);
