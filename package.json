@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "./src/index.ts",
+  "main": "server/index.ts",
   "scripts": {
     "dev": "nodemon",
     "build": "npm install && npx tsc",
